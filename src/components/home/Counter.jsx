@@ -1,20 +1,23 @@
 import React, { useState } from "react";
 
 const Counter = () => {
-  let [count, setCount] = useState(0);
+  const [count, setCount] = useState(0);
+  // let [count, setCount] = useState(0);
   //   let count = 0;
 
   const incrementValue = () => {
+    let currentCount = count;
     console.log(count, "Inc Start");
     // count += 1;
-    setCount(++count);
+    setCount(++currentCount);
     console.log(count, "Inc End");
   };
 
   const decrementValue = () => {
+    let currentCount = count;
     console.log(count, "Dec Start");
     // count -= 1;
-    setCount(--count);
+    setCount(--currentCount);
     console.log(count, "Dec End");
   };
 

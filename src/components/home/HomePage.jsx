@@ -1,6 +1,7 @@
 import React from "react";
 import Name from "./Name";
 import Counter from "./Counter";
+import UserList from "./UserList";
 
 const HomePage = () => {
   console.log("HomePage");
@@ -9,6 +10,7 @@ const HomePage = () => {
       <Name name="Ahmed" />
       <Name />
       <Counter />
+      <UserList />
     </div>
   );
 };
