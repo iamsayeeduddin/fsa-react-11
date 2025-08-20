@@ -51,7 +51,6 @@ const FormPage = () => {
             value={formValues.password}
             onChange={handleInputChange}
             class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 sadasdasd:bg-gray-700 sadasdasd:border-gray-600 sadasdasd:placeholder-gray-400 sadasdasd:text-white sadasdasd:focus:ring-blue-500 sadasdasd:focus:border-blue-500"
-            required
           />
         </div>
         <div class="flex items-start mb-5">
