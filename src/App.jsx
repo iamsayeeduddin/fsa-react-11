@@ -2,9 +2,10 @@ import { useState } from "react";
 import FormPage from "./components/form/FormPage";
 import DynamicUserList from "./components/home/DynamicUserList";
 import HomePage from "./components/home/HomePage";
+import TodoPage from "./components/todo/TodoPage";
 
 function App() {
-  const [showDynamicUsers, setShowDynamicUsers] = useState(false)
+  const [showDynamicUsers, setShowDynamicUsers] = useState(false);
   return (
     <div className="m-4">
       <button
@@ -16,6 +17,7 @@ function App() {
       {/* <HomePage /> */}
       {/* <FormPage /> */}
       {showDynamicUsers ? <DynamicUserList /> : null}
+      <TodoPage />
     </div>
   );
 }
