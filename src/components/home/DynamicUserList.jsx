@@ -16,7 +16,6 @@ const DynamicUserList = () => {
   //   { id: 9, name: "Ivan", email: "ivan@example.com", age: 31 },
   //   { id: 10, name: "Judy", email: "judy@example.com", age: 26 },
   // ];
-
   // Runs On Mount of Component and when any state changes in the component;
   useEffect(() => {
     console.log("Component Mounted 1");

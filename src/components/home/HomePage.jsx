@@ -11,7 +11,6 @@ const HomePage = () => {
       <Name name="Ahmed" />
       <Name />
       <Counter />
-      <UserList />
       <Conditional />
     </div>
   );

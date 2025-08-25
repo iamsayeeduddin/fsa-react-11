@@ -49,6 +49,9 @@ import { Link, Route, Routes } from "react-router-dom";
 import FormPage from "./components/form/FormPage";
 import DynamicUserList from "./components/home/DynamicUserList";
 import TodoPage from "./components/todo/TodoPage";
+import UserList from "./components/home/UserList";
+import Hoc from "./components/home/Hoc";
+import UserProfile from "./components/home/UserProfile";
 
 const App = () => {
   return (
@@ -64,14 +67,26 @@ const App = () => {
           <Link to="/todo">Todo List</Link>
         </li>
         <li>
-          <Link to="/userList">Users</Link>
+          <Link to="/users/static">Static Users</Link>
+        </li>
+        <li>
+          <Link to="/users/dynamic">Users</Link>
         </li>
       </ul>
+      <Hoc>
+        <p>HOC TEXT</p>
+        <span>Testing</span>
+      </Hoc>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/form" element={<FormPage />} />
         <Route path="/todo" element={<TodoPage />} />
-        <Route path="/userList" element={<DynamicUserList />} />
+        <Route path="/users">
+          <Route path="dynamic" element={<DynamicUserList />} />
+          <Route path="static" element={<UserList />} />
+          <Route path=":username" element={<UserProfile />} />
+          {/* http://localhost:5173/users/iamsayeeduddin */}
+        </Route>
       </Routes>
     </div>
   );
