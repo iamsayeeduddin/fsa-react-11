@@ -52,6 +52,7 @@ import TodoPage from "./components/todo/TodoPage";
 import UserList from "./components/home/UserList";
 import Hoc from "./components/home/Hoc";
 import UserProfile from "./components/home/UserProfile";
+import A from "./components/context/A";
 
 const App = () => {
   return (
@@ -87,6 +88,7 @@ const App = () => {
           <Route path=":username" element={<UserProfile />} />
           {/* http://localhost:5173/users/iamsayeeduddin */}
         </Route>
+        <Route path="/context" element={<A />} />
       </Routes>
     </div>
   );
