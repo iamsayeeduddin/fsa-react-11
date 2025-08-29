@@ -53,6 +53,7 @@ import UserList from "./components/home/UserList";
 import Hoc from "./components/home/Hoc";
 import UserProfile from "./components/home/UserProfile";
 import A from "./components/context/A";
+import Hooks from "./components/Hooks";
 
 const App = () => {
   return (
@@ -89,6 +90,7 @@ const App = () => {
           {/* http://localhost:5173/users/iamsayeeduddin */}
         </Route>
         <Route path="/context" element={<A />} />
+        <Route path="/hooks" element={<Hooks />} />
       </Routes>
     </div>
   );
